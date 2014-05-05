@@ -13,3 +13,4 @@ REM 上記で取得した作業ディレクトリに移動してからmakeを実行する。
 %MSYS_DIR%\bin\sh.exe --login -i -c "cd %CUR_DIR% && make"
 
 PAUSE
+
