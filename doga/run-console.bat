@@ -6,8 +6,6 @@ REM MSYS•W€‚Å‚Íprofile‚Åucd $HOMEv‚ð‚µ‚Ä‚¢‚é‚Ì‚ÅAì‹ÆƒfƒBƒŒƒNƒgƒŠ‚ª•Ï‚í‚Á‚Ä‚
 REM ‚»‚ê‚ð‰ñ”ð‚·‚éˆ×Aprofile‚ð“Ç‚Ýž‚ñ‚Å‚¢‚È‚¢ó‘Ô‚Åˆê’Uì‹ÆƒfƒBƒŒƒNƒgƒŠ‚ÌƒpƒX‚ðŽæ“¾‚·‚éB
 FOR /F "usebackq" %%w IN (`%MSYS_DIR%\bin\sh.exe -c "printf $(printf '\x25q') ""$(pwd)"""`) DO SET CUR_DIR=%%w
 
-REM ã‹L‚ÅŽæ“¾‚µ‚½ì‹ÆƒfƒBƒŒƒNƒgƒŠ‚ÉˆÚ“®‚µ‚Ä‚©‚çmake‚ðŽÀs‚·‚éB
-%MSYS_DIR%\bin\sh.exe --login -i -c "cd %CUR_DIR% && make"
+REM ã‹L‚ÅŽæ“¾‚µ‚½ì‹ÆƒfƒBƒŒƒNƒgƒŠ‚ÉˆÚ“®‚µ‚Ä‚©‚çƒRƒ“ƒ\[ƒ‹‚ðŠJ‚­
 
-PAUSE
-
+%MSYS_DIR%\bin\sh.exe --login -i -c "cd %CUR_DIR% && bash"
